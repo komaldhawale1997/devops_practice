@@ -10,7 +10,7 @@ pipeline {
 
         stage('Test') {
             when{
-                changestate "file.txt"
+                changeset "file.txt"
             }
             steps {
                 echo 'Testing application'
